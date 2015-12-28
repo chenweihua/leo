@@ -1,4 +1,3 @@
 gunicorn
 flask
-MySQL-db
 redis
