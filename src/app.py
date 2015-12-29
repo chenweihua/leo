@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, make_response, errorhandler
+from flask import Flask, render_template, request, make_response
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ def admin(name=None):
 
 @app.errorhandler(404)
 def not_found(error):
-    resp = make_response(render_template('404.html'))
+    resp = make_response(render_template('404.html'), 404)
     return resp
 
 if __name__ == "__main__":
