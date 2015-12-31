@@ -12,6 +12,7 @@ def index(name=None):
 def admin(name=None):
     resp = make_response(render_template('admin.html'))
     resp.headers['X-Powered-By'] = 'Leo'
+    resp.headers['X-Used-By'] = 'YANG'
     resp.set_cookie('SESSION_ID', 'DU998IU')
     return resp
 
