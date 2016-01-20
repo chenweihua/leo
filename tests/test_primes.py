@@ -1,7 +1,7 @@
 import sys
 sys.path.append('..')
 import unittest
-from core.primes import is_prime
+from leo.core.primes import is_prime
 
 class PrimesTestCase(unittest.TestCase):
     ''' Tests for `primes.py`.'''
