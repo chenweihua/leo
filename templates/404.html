@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <title>404</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/angular.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
 </head>
 <body>
-    <div ng-controller="ProductController as product">
-        {{ '{{ product.product.name }}' }}
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <div ng-controller="ProductController as product">
+                    {{ '{{ product.product.name }}' }}
+                    {{ '{{ product.product.age }}' }}
+                </div>
+            </div>
+            <div class="span8">
+                <p class="header">我们没有找到你想要的页面</p>
+            </div>
+        </div>
     </div>
-    <p class="header">我们没有找到你想要的页面</p>
 </body>
 </html>

@@ -5,5 +5,6 @@ app.controller('ProductController', function(){
 });
 
 var product = {
-    name: 'car'
+    name: 'car',
+    age: 12
 };
